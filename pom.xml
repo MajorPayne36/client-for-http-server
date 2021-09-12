@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>io</artifactId>
+    <artifactId>client-for-server</artifactId>
     <version>1.0</version>
 
     <properties>
@@ -40,6 +40,11 @@
             <version>8.0.26</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>server-for-client</artifactId>
+            <version>1.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -85,11 +90,11 @@
         </plugins>
     </build>
 
-    <distributionManagement>
+    <repositories>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/majorpayne36/non-rfc-http-framework</url>
+            <url>https://maven.pkg.github.com/majorpayne36/client-for-http-server</url>
         </repository>
-    </distributionManagement>
+    </repositories>
 
 </project>
